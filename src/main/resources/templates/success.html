@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container mt-5">
+            <div class="card shadow">
+                <div class="card-header bg-success text-white text-center">
+                    <h1 class="m-0">Registro Enviado con Éxito</h1>
+                </div>
+                <div class="card-body">
+                    <p><strong>Nombres:</strong> <span th:text="${runner.nombres}"></span></p>
+                    <p><strong>Apellidos:</strong> <span th:text="${runner.apellidos}"></span></p>
+                    <p><strong>DNI:</strong> <span th:text="${runner.dni}"></span></p>
+                    <p><strong>Residencia:</strong> <span th:text="${runner.residencia}"></span></p>
+                    <p><strong>Teléfono Personal:</strong> <span th:text="${runner.telefono}"></span></p>
+                    <p><strong>Teléfono de Emergencia:</strong> <span th:text="${runner.contactoEmergencia}"></span></p>
+                    <p><strong>Tipo de Sangre:</strong> <span th:text="${runner.tipoSangre}"></span></p>
+                    <p><strong>Alergias:</strong> <span th:text="${runner.alergias}"></span></p>
+                    <p><strong>Kilómetros a Correr:</strong> <span th:text="${runner.kilometros}"></span></p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="/form" class="btn btn-primary">Registrar otro corredor</a>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
